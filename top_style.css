@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Yu Gothic', "游ゴシック", 'YuGothic', "游ゴシック体", Hiragino Kaku Gothic ProN, 'Meiryo';
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p {
+    margin-top:20px;
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ヘッダーのスタイル */
+.main-header {
+    background: linear-gradient(90deg, #ec9da9, #ffe48d); /* 左から右にグラデーション */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* ヘッダーを固定 */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+/* 新規会員登録ボタン */
+.register-btn {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+.register-btn:hover {
+    background-color: #e65c5c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+}
+
+.login-btn {
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* メインコンテンツ */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 30px; /* ヘッダー分のスペースを空ける */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6666;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .illustration {
+        margin-top: 20px;
+    }
+}
+
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* フォームラベル */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* フォーム入力フィールド */
+form input[type="text"], form input[type="password"], form input[type="submit"], form input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+
+/* 送信ボタン */
+form input[type="submit"] {
+    background: linear-gradient(90deg, #ec9da9, #ffe48d); /* 左から右にグラデーション */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e65c5c;
+}
+
+/* ラジオボタン */
+form label input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* ヘッダーのデザイン */
+.header {
+    background: linear-gradient(90deg, #ec9da9, #ffe48d);
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+}

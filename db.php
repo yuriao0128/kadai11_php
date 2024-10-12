@@ -8,8 +8,8 @@
 //さくらサーバー用1 - Githubに上げない様に注意 -
 $host = 'mysql80.beshift.sakura.ne.jp';
 $dbname = 'beshift_bc_db';
-$user = '*****';
-$pass = '*****';
+$user = '****';
+$pass = '****';
 
 try {
   //Password:MAMP='root',XAMPP=''　MAMP = パスワードがroot
@@ -74,6 +74,14 @@ function countComments($post_id) {
   return $stmt->fetchColumn();
 }
 
-
+//LOGINチェック
+function sschk(){
+if(!isset($_SESSION["chk_ssid"]) || $_SESSION["chk_ssid"]!=session_id()){
+   exit("Login Error");
+}else{
+   session_regenerate_id(true);
+   $_SESSION["chk_ssid"] = session_id();
+    }
+}
 ?>
 

@@ -1,12 +1,14 @@
 <?php
+session_start();
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
 $id = $_GET["id"];
 require 'db.php';  // データベース接続
+sschk();
+
 
 //２．データ登録SQL作成
 $sql = "SELECT * FROM bs_posts WHERE id=:id";

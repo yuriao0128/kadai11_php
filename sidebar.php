@@ -15,6 +15,7 @@
         <li><a href="read.php">イベント一覧</a></li>
         <li><a href="index.php">企画する</a></li>
         <li><a href="search.php">探す</a></li>
+        <li><a class="logout" href="login.php">ログアウト</a></li>
         <!-- 他のリンクもここに追加できます -->
     </ul>
 </div>

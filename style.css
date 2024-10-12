@@ -512,3 +512,7 @@ body {
         margin-top: 10px;
     }
 }
+
+.logout {
+    bottom:0;
+}
